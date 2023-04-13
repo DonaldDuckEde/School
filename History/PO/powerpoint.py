@@ -3,7 +3,6 @@ from pptx.util import Inches
 
 prs = Presentation()
 
-# Slide 1: Title slide
 slide = prs.slides.add_slide(prs.slide_layouts[0])
 title = slide.shapes.title
 subtitle = slide.placeholders[1]
@@ -54,5 +53,4 @@ for point in bullet_points:
     p.text = point
     p.level = 0
 
-# Save presentation
 prs.save("31_maart_presentatie.pptx")
